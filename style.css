@@ -67,8 +67,9 @@ body {
 }
 
 .kiri p {
-    color: #032152;
+    color: #9CBCD0;
     margin-top: 10px;
+    font-weight: bold;
 }
 
 .kanan {
@@ -127,7 +128,7 @@ th {
 }
 
 .table-footer {
-  background: #cedfea;
+  background: #9CBCD0;
   text-align: center;
   padding: 10px;
   font-weight: bold;
