@@ -1,0 +1,270 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Fredoka', sans-serif;  
+}
+
+body {
+  background: #4D83AA;
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.wrapper {
+  width: 800px;
+  margin: auto;
+}
+
+.yellow-bar {
+  background: #E2D800;
+  height: 70px;
+  position: relative;
+  text-align: center;
+}
+
+.yellow-bar h1 {
+  color: #032152;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.circles {
+    position: absolute;
+    top: -0.50px;              
+    left: -8px;             
+    display: flex;
+    gap: 10px;              
+}
+
+
+.circles span {
+    width: 16px;
+    height: 16px;
+    background: #4D83AA;
+    border-radius: 50%;
+}
+
+.main {
+  display: flex;   
+  margin-top: -1px;
+  align-items: flex-start;
+}
+
+.kiri {
+    width: 300px;
+    height: 300px;
+    background: white;
+    padding: 10px;
+    box-sizing: border-box;
+    border-right: 2px dotted #032152;
+    border-bottom-left-radius: 10px;
+}
+
+.kiri h3 {
+    color: #032152;    
+}
+
+.kiri p {
+    color: #032152;
+    margin-top: 10px;
+}
+
+.kanan {
+    width: 500px;
+    height: 600px;
+    background: white;
+    padding: 10px;
+    box-sizing: border-box;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.kanan h2 {
+    color: #032152;
+}
+
+.content {
+  width: 500px;
+  padding: 20px;
+}
+
+.content h2 {
+  color: #032152;
+  margin-bottom: 20px;
+}
+
+.dotted {
+  border: none;
+  border-top: 3px dotted #032152;
+  margin: 1px 0;
+}
+
+.table-box {
+  width: 400px;
+  background: #9CBCD0;
+  border-top: 6px solid #032152;
+  border-bottom: 4px solid #032152;
+  border-radius: 6px;
+  overflow: hidden;
+  margin: auto;
+}
+
+table {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+  color: white;
+}
+
+th, td {
+  padding: 12px;
+}
+
+th {
+  color: #032152;
+}
+
+.table-footer {
+  background: #cedfea;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+  color: #032152;
+}
+
+.search-box {
+  display: flex;
+  margin-top: 10px; 
+}
+
+.search-box input {
+  flex: 1;
+  padding: 2px;
+  border-radius: 5px;
+  border: 2px solid #b0b0b0;
+  padding: 4px;
+}
+
+.search-box button {
+  margin-left: 5px;
+  padding: 5px 10px;
+  border: 1px solid #b0b0b0;
+  border-radius: 6px;
+  cursor: pointer;
+  background: #b0b0b068;
+}
+
+.search-box button {
+  color: rgb(75, 69, 69);
+}
+
+.formulir {
+  width: 800px;
+  height: 600px;
+  background: white;
+  padding: 10px;
+  box-sizing: border-box;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.formulir h1 {
+  color: #032152;
+  text-align: center;
+  margin-top: 20px;
+  font-weight: normal;
+}
+
+.form-container {
+  width: 500px;
+  margin: 40px auto 0 auto;
+}
+
+.baris-formulir {
+  display: flex;
+  align-items: stretch;
+  margin-bottom: 2px;
+  gap: 2px;  
+}
+
+.label {
+  width: 40%;
+  height: 50px;
+  background: #c0e8fb;
+  padding: 12px 15px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: #0f4f6b;
+  font-weight: 500;
+}
+
+.input-formulir {
+  width: 60%;
+  background: #c0e8fb;
+  padding: 8px 15px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  
+}
+
+.input-formulir input {
+  width: 95%;
+  height: 35px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px dashed #21678A;
+  background: white;
+  outline: none;
+  margin-left: 15px;
+}
+
+.baris-remember {
+  background: #c0e8fb;
+  border-radius: 10px;
+  padding: 10px 15px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.baris-remember label {
+  color: #21678A;
+  font-weight: 500;
+  cursor: pointer; 
+}
+
+.remember-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #0f4f6b;
+  font-weight: 500;
+}
+
+.remember-input {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.btn-submit {
+  background: #126386;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+/* efek hover */
+.btn-submit:hover {
+  background-color: #21678A;
+}
