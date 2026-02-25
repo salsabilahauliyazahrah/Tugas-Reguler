@@ -1,0 +1,40 @@
+<!-- saya mengerjakan tugas ini sendiri tanpa melakukan kecurangan seperti menggunakan, mendupliaksi kode perogram kode program yang ada. 
+ jika saya melakukan kecurangan dalam perngerjaan tugas ini maka saya siap menerima sanksi atau hukuman dari dari dosen mata kuliah dan tuhan / allah  swt -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 3</title>
+</head>
+<body>
+    <button onclick="buttonClick()">click me!</button>
+    <p id="message" style="display: none;">You have clicked the button <span id="count">0</span> times(s) in this session</p>
+    <p>Click the button to see the counter increase</p>
+    <p>Close the browser tab (or window), and try again, and the counter is reset</p>
+    
+    <!-- javascript -->
+    <script>                
+        let click = localStorage.getItem("click") || 0;
+
+        document.getElementById("count").innerHTML = click;
+        if (click > 0) {
+            document.getElementById("message").style.display = "block";
+        }
+
+        function buttonClick() {
+            click++;            
+            localStorage.setItem("click", click);
+            document.getElementById("count").innerHTML = click;
+            document.getElementById("message").style.display = "block";
+        }
+    </script>
+</body>
+</html>
+
+<!-- Referensi: 
+1. https://stackoverflow.com/questions/9186346/onclick-increment-number 
+2. https://stackoverflow.com/questions/73975739/localstorage-with-click-event -->
+
+
