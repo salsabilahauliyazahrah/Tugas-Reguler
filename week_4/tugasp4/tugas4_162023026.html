@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Week 4</title>
+
+    <!-- style-tugas4.css -->
+    <link rel="stylesheet" href="style-tugas4.css">
+
+    <!-- script.js -->
+    <script src="script.js" defer></script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="grid-header">
+                <img src="itenas.jpeg">                
+                <img src="itenas.jpeg">                
+                <img src="itenas.jpeg">                
+                <img src="itenas.jpeg">                
+                <img src="itenas.jpeg">                
+                <img src="itenas.jpeg">                
+            </div>
+            
+        </div>
+
+        <div class="main-layout">
+            <div class="sidebar">
+                <a href="">Home</a>
+                <a href="">Menu</a>
+                <a href="">Calculator</a>
+                <a href="tugas4_162023026.html">Garis Hidup</a>
+            </div>
+
+            <div class="content">
+                <h1>Program Garis Hidup Tanggal Lahir</h1>
+                <p>
+                    Program ini merupakan program untuk mendeskripsikan karakter anda berdasarkan tanggal lahir yang kemudian hasilnya akan dikategorikan sebagai Garis Lahir 1 sampai 9.
+                    <br><br>
+                    Angka-angka dalam tanggal lahir anda menyimpan banyak makna. Jumlahkan sampai menjadi satu angka, lalu lihat artinya? (misalnya Anda lahir tanggal 25 Desember 1998, 25 + 1998 = 2 + 5 + 1 + 2 + 1 + 9 + 8 + 8 = 36 = 3 + 6 = 9, maka garis lahir anda adalah 9)
+                </p>
+                <h2>Ayo Cari Tahu Kepribadian Kamu !</h2>
+                <hr class="garis">
+
+                <form id="">
+
+                    <div class="form-row">                        
+                        <label>Masukkan Tanggal Lahir Anda</label>
+                        <span>:</span>
+                        <select id="tanggal">
+                            <script>
+                                for (let i = 1; i <= 31; i++) {
+                                    document.write(`<option value="${i}">${i}</option>`);
+                                }
+                            </script>
+                        </select>                                        
+                    </div>
+                    
+                    <div class="form-row">
+                        <label>Masukkan Bulan Lahir Anda</label>
+                        <span>:</span>
+                        <select id="bulan">
+                            <option value="1">Januari</option>
+                            <option value="2">Februari</option>
+                            <option value="3">Maret</option>
+                            <option value="4">April</option>
+                            <option value="5">Mei</option>
+                            <option value="6">Juni</option>
+                            <option value="7">Juli</option>
+                            <option value="8">Agustus</option>
+                            <option value="9">September</option>
+                            <option value="10">Oktober</option>
+                            <option value="11">November</option>
+                            <option value="12">Desember</option>
+                        </select>
+                    </div>
+
+                    <div class="form-row">
+                        <label>Masukkan Tahun Lahir Anda</label>
+                        <span>:</span>
+                            <select id="tahun">
+                                <script>
+                                for (let i = 1900; i <= 2026; i++) {
+                                    document.write(`<option value="${i}">${i}</option>`);
+                                }
+                            </script>
+                        </select>
+                    </div>
+
+                    <div class="form-buttons">
+                        <button type="button" onclick="hitungLifePath()">Kirim</button>
+                        <button type="reset" onclick="resetHasil()">Reset</button>                
+                    </div>  
+                    
+                </form>                 
+                <hr class="garis"> 
+
+                <h2>Output</h2>
+                <div class="output">
+                    <div class="form-row-output">
+                        <label for="">Tanggal</label>
+                        <span>:</span>
+                        <input type="text" id="output-tanggal" readonly>
+                    </div>
+
+                    <div class="form-row-output">
+                        <label for="">Bulan</label>
+                        <span>:</span>
+                        <input type="text" id="output-bulan" readonly>
+                    </div>
+                    
+                    <div class="form-row-output">
+                        <label for="">Tahun</label>
+                        <span>:</span>
+                        <input type="text" id="output-tahun" readonly>
+                    </div>
+                    
+                    <div class="form-row-output">
+                        <label for="">Hasil 1</label>
+                        <span>:</span>
+                        <input type="text" id="hasil1" readonly>
+                    </div>
+                    
+                    <div class="form-row-output">
+                        <label for="">Hasil 2</label>
+                        <span>:</span>
+                        <input type="text" id="hasil2" readonly>
+                    </div>
+                    
+                    <div class="form-row-output">
+                        <label for="">Hasil Akhir</label>
+                        <span>:</span>
+                        <input type="text" id="hasilAkhir" readonly>
+                    </div>                    
+                </div>
+
+                <div id="hasilGarisHidup" style="display: none;">
+                    <hr class="garis"> 
+                    <h1 id="garisHidup"></h1>                    
+                    <p id="deskripsiGarisHidup"></p>
+                </div>                
+
+            </div>                           
+        </div>
+       
+
+        <div class="footer">
+            <p>2802244</p>
+            <p>280224 - Sistem Informasi | ITENAS 2024</p>
+        </div>
+    </div>
+</body>
+</html>
