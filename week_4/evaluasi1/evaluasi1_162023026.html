@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluasi 1</title>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="style-evaluasi1.css">
+
+    <!-- Script -->
+    <script src="script.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="grid-header">
+                <img src="../tugasp4/itenas.jpeg">
+                <img src="../tugasp4/itenas.jpeg">
+                <img src="../tugasp4/itenas.jpeg">
+                <img src="../tugasp4/itenas.jpeg">
+                <img src="../tugasp4/itenas.jpeg">
+                <img src="../tugasp4/itenas.jpeg">
+            </div>
+        </div>
+
+        <div class="main-layout">
+            <div class="sidebar">
+                <a href="">Home</a>
+                <a href="#" onclick="tampilMenu()">Menu</a>
+                <a href="#" onclick="tampilkanCalculator()">Calculator</a>
+                <a href="../tugasp4/tugas4_162023026.html">Garis Hidup</a>
+            </div>
+
+            <div class="content">
+                <div id="halamanAwal">
+                    <h4>Klik Button disamping >> <button onclick="shout()">Shout</button></h4>                
+                </div>
+                
+                <!-- Bagian menu -->
+                <div id="menuMakanan" style="display: none;">
+                    <div class="menu-wrapper">
+                        <table border="1" class="menu-table">
+                            <tr>
+                                <th>No</th>
+                                <th>Makanan/Minimum</th>
+                                <th>Harga</th>
+                                <th>Pesan</th>
+                            </tr>
+
+                            <tr>
+                                <td>1</td>
+                                <td>Bakso Istimewa</td>
+                                <td>@ Rp 12000</td>
+                                <td><input type="number" id="bakso" value="0" onchange="hitungTotal()"></td>
+                            </tr>
+
+                            <tr>
+                                <td>2</td>
+                                <td>Soto Spesial</td>
+                                <td>@ Rp 10000</td>
+                                <td><input type="number" id="soto" value="0" onchange="hitungTotal()"></td>
+                            </tr>
+                            
+                            <tr>
+                                <td>3</td>
+                                <td>Mie Ayam Super</td>
+                                <td>@ Rp 15000</td>
+                                <td><input type="number" id="mie" value="0" onchange="hitungTotal()"></td>
+                            </tr>                 
+                            
+                            <tr class="summary-row">
+                                <td colspan="3">Jumlah Total</td>
+                                <td><input type="text" id="total" value="0" readonly></td>
+                            </tr>
+
+                            <tr class="summary-row">
+                                <td colspan="3">Diskon</td>
+                                <td><input type="text" id="diskon" value="0" readonly></td>
+                            </tr>
+
+                            <tr class="summary-row">
+                                <td colspan="3">Jumlah Bayar</td>
+                                <td><input type="text" id="bayar" value="0" readonly></td>
+                            </tr>
+                        </table>
+
+                        <div class="reset">
+                            <button class="" onclick="resetData()">Reset</button>
+                        </div>
+                    </div>                    
+                </div>
+
+                <!-- Bagian Calculator -->
+                <div id="tampilkanCalculator" style="display: none;">
+                    <div class="calculator">
+                        <input type="number" id="angka1">
+                        <select id="operator">
+                            <option value="+">+</option>
+                            <option value="-">-</option>
+                            <option value="*">*</option>
+                            <option value="/">/</option>
+                        </select>
+                        <input type="number" id="angka2">
+
+                        =
+
+                        <input type="text" id="hasil" readonly>
+                    </div>
+
+                    <br>
+
+                    <button onclick="hitungHasil()">Hitung</button>
+                    <button onclick="resetHasil()">Reset</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>280224</p>
+            <p>Sistem Informasi | ITENAS 2024</p>
+        </div>        
+    </div>    
+</body>
+</html>

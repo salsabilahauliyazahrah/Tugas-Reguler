@@ -1,0 +1,160 @@
+body {
+    margin: 0;
+    background-image: url('../tugasp4/Picture1.png');
+    background-repeat: repeat;
+    font-family: Arial, sans-serif;        
+}
+
+.container {
+    width: 900px;
+    margin: 40px auto;
+    background-color: #d9953b;
+    border: 8px solid #7a3b2e;
+    padding: 20px;
+}
+
+.header {
+    padding: 0;
+    text-align: center;
+}
+
+
+.grid-header {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+}
+
+.grid-header img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.content {
+    padding: 20px;
+    flex: 1;    
+}
+
+.content p {
+    padding-left: 35px;
+    padding-right: 70px;
+}
+
+.main-layout {
+    display: flex;
+    gap: 20px;
+}
+
+.sidebar a {
+    display: block;
+    text-decoration: none;
+    color: purple;
+    padding: 10px;
+    border-bottom: 2px solid rgb(93, 88, 88);
+    margin-bottom: 10px;  
+    text-align: center;      
+}
+
+.sidebar a:last-child {
+    border-bottom: none; 
+}
+
+.sidebar a:hover {
+    background-color: #7a3b2e;     
+    color: white;
+}
+
+h1 {
+    text-align: left; 
+}
+
+.footer {
+    text-align: center;
+    margin: 20px -20px -20px -20px; 
+    padding: 10px 0;
+    background-color: orange;            
+}
+
+.footer p {
+    margin: -1px 0;
+}
+
+.garis {
+    width: 100%;
+    height: 3px;
+    background-color: rgb(93, 88, 88);
+    border: none;
+    margin: 15px auto;
+}
+
+.content button {
+    background-color: black;
+    color: #d4ff00;
+    border: 2px solid #bfbfbf;
+    padding: 2px 30px;
+    font-size: 12px;
+    /* font-weight: bold; */
+    cursor: pointer;    
+}
+
+
+.menu-table {
+    background:#ffd400;
+    border-collapse:collapse;
+    font-size:15px;
+}
+
+.menu-table th {
+    background:#ffd400;
+    border:2px solid #d9953b;
+    padding: 2px;
+    text-align:left;
+}
+
+.menu-table td {
+    border:2px solid #d9953b;
+    padding: 2px;
+    width: 100px;
+}
+
+.summary-row td{
+    text-align: right;
+}
+
+.menu-table input{
+    width:100%;
+    box-sizing: border-box;
+    background:white;
+    padding:2px;
+    border: #a1a1a1 1px solid;
+}
+
+.menu-wrapper {
+    display: flex;
+    align-items: stretch;
+}
+
+.reset {
+    background: #efebeb;
+    width: 100px;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Calculator */
+.calculator {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.calculator input {
+    width: 100px;
+    padding: 5px;    
+}
+
+.calculator select {
+    padding: 5px;
+}
