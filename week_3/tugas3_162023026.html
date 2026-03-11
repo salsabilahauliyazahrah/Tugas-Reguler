@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Week 3</title>
+
+    <script src="https://jscolor.com/release/2.4.5/jscolor.js"></script>
+
+    <style>
+        body {
+            background: #3f6aa3;
+            color: red;
+            font-family: arial;        
+            padding: 20px;
+        }
+
+        h1{
+            color: red;
+        }
+
+        container {
+            border: 2px solid white;
+            padding: 20px;
+            width: 400px;
+        }
+
+
+        input[type="color"] {
+            width: 50px;
+            height: 25px;            
+            cursor: pointer;
+        }
+
+        .jscolor {
+            width: 40px;
+            height: 20px;
+            border: 2px solid #ccc;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Preferensi Warna</h1>
+
+    <div class="container">
+        <fieldset>
+            <legend>Warna</legend>
+
+            <p>
+                1. Warna latarbelakang
+                <button class="jscolor {value:'#ffffff'}" id="lb"></button>                
+            </p>
+            <p>
+                2. Warna teks
+                <button class="jscolor {value:'#ff0000'}" id="text"></button>
+            </p>
+        </fieldset>
+        <button onclick="simpan()">Simpan</button>
+        
+        <script>
+            function simpan() {
+                const warnaLatar = document.getElementById("lb").value;
+                const warnaTeks = document.getElementById("text").value;
+
+                document.body.style.backgroundColor = warnaLatar;
+                document.body.style.color = warnaTeks;        
+            }
+        </script>
+    </div>
+</body>
+</html>
