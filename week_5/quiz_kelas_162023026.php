@@ -21,26 +21,26 @@ NRP: 162023026 -->
             font-size: 18px;
         }
 
-        .Merah:hover{
+        .barisMerah:hover{
             background-color: red;
             color: white;
         }
 
-        .Kuning:hover{
+        .barisKuning:hover{
             background-color: yellow;
         }        
 
-        .Hijau:hover{
+        .barisHijau:hover{
             background-color: green;
             color: white;
         }
 
-        .Biru:hover{
+        .barisBiru:hover{
             background-color: blue;
             color: white;
         }
 
-        .Coklat:hover{
+        .barisCoklat:hover{
             background-color: brown;
             color: white;
         }
@@ -49,7 +49,7 @@ NRP: 162023026 -->
 <body>
     <table>
         <?php 
-        $warna = ["Merah", "Kuning", "Hijau", "Biru", "Coklat"];
+        $warna = ["barisMerah", "barisKuning", "barisHijau", "barisBiru", "barisCoklat"];
 
         for ($i = 1; $i <= 5; $i++) {
 

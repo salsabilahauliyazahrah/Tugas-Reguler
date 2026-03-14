@@ -1,3 +1,7 @@
+<!-- Saya mengerjakan tugas ini sendiri tanpa melakukan kecurangan seperti menggunakan, menduplikasi kode program yang ada. 
+Jika sata melakukan kecurangan dalam mengerjakan tugas ini maka saya siap menerima sanksi atau hukuman dari dosen mata kuliah dan Allah SWT -->
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,26 +14,9 @@
     <style>
         body {
             background: #3f6aa3;
-            color: red;
-            font-family: arial;        
+            color: rgb(175, 11, 11);
+            font-family: 'sans-serif';        
             padding: 20px;
-        }
-
-        h1{
-            color: red;
-        }
-
-        container {
-            border: 2px solid white;
-            padding: 20px;
-            width: 400px;
-        }
-
-
-        input[type="color"] {
-            width: 50px;
-            height: 25px;            
-            cursor: pointer;
         }
 
         .jscolor {
@@ -43,30 +30,32 @@
 <body>
     <h1>Preferensi Warna</h1>
 
-    <div class="container">
+    <div>
         <fieldset>
             <legend>Warna</legend>
 
             <p>
                 1. Warna latarbelakang
-                <button class="jscolor {value:'#ffffff'}" id="lb"></button>                
+                <input type="color" id="lb" value="#3f6aa3">
             </p>
+
             <p>
                 2. Warna teks
-                <button class="jscolor {value:'#ff0000'}" id="text"></button>
-            </p>
+                <input type="color" id="text" value="#ff0000">
+            </p>            
+
         </fieldset>
         <button onclick="simpan()">Simpan</button>
-        
-        <script>
-            function simpan() {
-                const warnaLatar = document.getElementById("lb").value;
-                const warnaTeks = document.getElementById("text").value;
 
-                document.body.style.backgroundColor = warnaLatar;
-                document.body.style.color = warnaTeks;        
-            }
-        </script>
+        <script>
+        function simpan() {
+            const warnaLatar = document.getElementById("lb").value;
+            const warnaTeks = document.getElementById("text").value;
+
+            document.body.style.backgroundColor = warnaLatar;
+            document.body.style.color = warnaTeks;
+        }
+        </script>        
     </div>
 </body>
 </html>
