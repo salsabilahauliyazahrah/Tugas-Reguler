@@ -4,7 +4,6 @@ body {
     margin: 0;
 }
 
-/* Card */
 .container {
     width: 360px;
     margin: 80px auto;
@@ -14,23 +13,20 @@ body {
     box-shadow: 0 2px 10px rgba(0,0,0,0.2);
 }
 
-/* Title */
 h2 {
     text-align: center;
     margin-bottom: 20px;
     text-decoration-line: underline;
-    text-decoration-style: wavy; /* ini bikin berkelok */
-    text-decoration-color: black; /* opsional */    
+    text-decoration-style: wavy;
+    text-decoration-color: black;    
 }
 
-/* Label */
 label {
     font-weight: bold;
     display: block;
     margin-bottom: 5px;
 }
 
-/* Input */
 input {
     width: 100%;
     padding: 10px;
@@ -41,12 +37,10 @@ input {
     box-sizing: border-box;
 }
 
-/* Efek focus (biru seperti gambar) */
 input:focus {
     border: 2px solid #4a5bdc;
 }
 
-/* Tombol Insert */
 .btn-update {
     width: 100%;
     padding: 12px;
@@ -62,7 +56,6 @@ input:focus {
     background: #3b4cc0;
 }
 
-/* Tombol bawah */
 .flex {
     display: flex;
     margin-top: 15px;
@@ -85,9 +78,7 @@ a.btn-main {
     display: block;
 }
 
-/* Notif */
 .msg {
-    /* margin-top: 5px; */
     margin-bottom: 15px;
     padding: 12px;
     border: 1px solid #dc3545;
@@ -103,7 +94,6 @@ a.btn-main {
     
 }
 
-/* Tooltip hidden */
 .tooltip {
     position: absolute;
     top: 100%;
@@ -119,12 +109,10 @@ a.btn-main {
     z-index: 10;
 }
 
-/* Muncul saat hover */
 .input-group:hover .tooltip {
     display: block;
 }
 
-/* Container hitam */
 .nav-box {
     display: flex;
     margin-top: 15px;
@@ -133,7 +121,6 @@ a.btn-main {
     overflow: hidden;
 }
 
-/* Item kiri kanan */
 .nav-item {
     flex: 1;
     text-align: center;
@@ -143,12 +130,10 @@ a.btn-main {
     font-size: 14px;
 }
 
-/* Hover effect */
 .nav-item:hover {
     background: #222;
 }
 
-/* Card user */
 .user-box {
     background: #f5f5f5;
     padding: 12px;
@@ -161,26 +146,22 @@ a.btn-main {
     align-items: center;
 }
 
-/* Info kiri */
 .user-info b {
     display: block;
     font-size: 14px;
 }
 
-/* Email kecil */
 .email {
     font-size: 12px;
     color: #888;
     font-style: italic;
 }
 
-/* Tombol kanan */
 .user-action {
     display: flex;
     gap: 6px;
 }
 
-/* Tombol edit */
 .btn-edit {
     background: #28a745;
     color: white;
@@ -191,7 +172,6 @@ a.btn-main {
     cursor: pointer;
 }
 
-/* Tombol delete */
 .btn-delete {
     background: #dc3545;
     color: white;
@@ -202,7 +182,6 @@ a.btn-main {
     cursor: pointer;
 }
 
-/* Hover effect */
 .btn-edit:hover {
     background: #218838;
 }
@@ -211,7 +190,6 @@ a.btn-main {
     background: #c82333;
 }
 
-/* ERROR (merah) */
 .msg.error {
     padding: 12px;
     border: 1px solid #dc3545;
@@ -221,7 +199,6 @@ a.btn-main {
     margin-top: 10px;
 }
 
-/* SUCCESS (hijau) */
 .msg.success {
     padding: 12px;
     border: 1px solid #28a745;

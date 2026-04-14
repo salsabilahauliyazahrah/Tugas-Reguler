@@ -5,7 +5,7 @@ $id = $_POST['id'];
 $username = trim($_POST['username']);
 $email = trim($_POST['email']);
 
-// VALIDASI
+//Validasi kosong
 if (empty($username) || empty($email)) {
     header("Location: ../view/edit.php?id=$id&msg=Data tidak boleh kosong!");
     exit;
@@ -16,7 +16,7 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
     exit;
 }
 
-// CEK DUPLIKAT (kecuali data sendiri)
+//Mengecek duplikasi
 $check = mysqli_query($conn, 
     "SELECT * FROM users WHERE (username='$username' OR email='$email') AND id != $id"
 );
@@ -26,7 +26,7 @@ if (mysqli_num_rows($check) > 0) {
     exit;
 }
 
-// UPDATE DATA
+//Memperbarui data
 $query = "UPDATE users SET username='$username', email='$email' WHERE id=$id";
 
 if (mysqli_query($conn, $query)) {
